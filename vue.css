@@ -1005,29 +1005,25 @@ pre:after {
     transform: translate(-50%,-50%);
 }
 
-.developerLogo{
-    height: 50px;
-    width: 220px;
-    display: block;
-    overflow: hidden;
-}
 
-.vueLogo{
+
+.moreLink{
     text-decoration: none;
     display: -webkit-box;
     display: box;
     -webkit-box-align:center;
     box-align:center;
     color: #505d6b;
+    margin-top:10px;
 }
 
-.vueLogo img{
+.moreLink img{
     width: 45px;
     margin-right: 10px;
     display: block;
 }
 
-.vueLogo p{
+.moreLink p{
     -webkit-box-flex: 1;
     box-flex: 1;
     line-height: 1;
