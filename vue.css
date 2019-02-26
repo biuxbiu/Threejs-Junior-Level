@@ -57,6 +57,10 @@ div#app:empty:before {
     font-weight: 700
 }
 
+.search.search{
+    padding: 10px 20px ;
+}
+
 body,
 html {
     height: 100%
@@ -239,7 +243,6 @@ main.hidden {
 .sidebar {
     border-right: 1px solid rgba(0, 0, 0, .07);
     overflow-y: auto;
-    padding: 40px 0 0 50px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -269,7 +272,8 @@ main.hidden {
 
 .sidebar .sidebar-nav {
     line-height: 2em;
-    padding-bottom: 40px
+    padding-bottom: 40px;
+    padding-left: 20px;
 }
 
 
@@ -999,4 +1003,39 @@ pre:after {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+}
+
+.developerLogo{
+    height: 50px;
+    width: 220px;
+    display: block;
+    overflow: hidden;
+}
+
+.vueLogo{
+    text-decoration: none;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-align:center;
+    box-align:center;
+    color: #505d6b;
+}
+
+.vueLogo img{
+    width: 45px;
+    margin-right: 10px;
+    display: block;
+}
+
+.vueLogo p{
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    line-height: 1;
+}
+
+.MoreWay{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top:40px;
+    line-height: 1;
 }

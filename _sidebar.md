@@ -1,6 +1,4 @@
 <!-- <img class="logo" src="img/logo.png" /> -->
-<img class="logo" src="img/javascript.jpg" />
-
 
 * [基础概念 ](base/#Javascript)
     * [- 变量](base/README#变量)
@@ -44,3 +42,18 @@
     * [- Events](base/switch.md)
     * [- 创建图像幻灯片](base/switch.md)
     * [- 表格验证](base/switch.md)
+
+
+
+<div class="MoreWay">More Learning Pathway</div>
+
+
+<a class="developerLogo" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target="_blank"><img src="https://developer.mozilla.org/static/img/web-docs-sprite.22a6a085cf14.svg"></a>
+
+
+<div class="MoreWay">Good FrontEnd Framework</div>
+
+<a class="vueLogo" href="https://cn.vuejs.org/" target="_blank">
+<img src="https://cn.vuejs.org/images/logo.png">
+<p>The Progressive JavaScript Framework</p>
+</a>
