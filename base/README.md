@@ -242,16 +242,44 @@ scene.add(torusKnotMesh);
 
 [![](../img/Material-more.svg)](https://threejs.docschina.org/#api/materials/LineBasicMaterial)
 
+###### MeshBasicMaterial
+`MeshBasicMaterial`：为几何设置简单颜色，或者显示几何体的线框;<br>
+<iframe height="265" style="width: 100%;" scrolling="no" title="vPOORz" src="//codepen.io/biubiubiu/embed/vPOORz/?height=265&theme-id=0&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/biubiubiu/pen/vPOORz/'>vPOORz</a> by @biu²
+  (<a href='https://codepen.io/biubiubiu'>@biubiubiu</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
-`MeshBasicMaterial`：为几何体赋予一种简单的颜色，或者显示几何体的线框 <br>
-`MeshDepthMaterial`：根据网格到相机的距离，该材质决定如何给网格染色 ;<br>
-`MeshNormalMaterial`：根据物体表面的法向量计算颜色 ;<br>
-`MeshFaceMaterial`：这是一种容器，可以在该容器中为物体的各个表面上设置不同的颜色;<br>
-`MeshLambertMaterial`：考虑光照的影响，可以创建颜色暗淡，不光亮的物体;<br>
-`MeshPhongMaterial`：考虑光照的影响，可以创建光亮的物体 ;<br>
-`ShaderMaterial`：使用自定义的着色器程序，直接控制顶点的放置方式，以及像素的着色方式。<br>
-`LineBasicMaterial`：可以用于THREE.Line几何体，从而创建着色的直线;<br>
-`LineDashedMaterial`类似与基础材质，但可以创建虚线效果;
+###### MeshDepthMaterial
+`MeshDepthMaterial`：摄像机敏感材质：作逐渐消失效果；<br>
+
+###### MeshNormalMaterial
+`MeshNormalMaterial`：法线敏感材质，根据法线设置颜色；<br>
+<iframe height="265" style="width: 100%;" scrolling="no" title="wOKYGj" src="//codepen.io/biubiubiu/embed/wOKYGj/?height=265&theme-id=0&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/biubiubiu/pen/wOKYGj/'>wOKYGj</a> by @biu²
+  (<a href='https://codepen.io/biubiubiu'>@biubiubiu</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+###### MeshFaceMaterial
+`MeshFaceMaterial`：为每个面设置材质颜色；<br>
+
+###### MeshLambertMaterial
+`MeshLambertMaterial`：光源敏感材质，根据光做暗淡光亮效果；<br>
+<iframe height="265" style="width: 100%;" scrolling="no" title="Mxwwxb" src="//codepen.io/biubiubiu/embed/Mxwwxb/?height=265&theme-id=0&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/biubiubiu/pen/Mxwwxb/'>Mxwwxb</a> by @biu²
+  (<a href='https://codepen.io/biubiubiu'>@biubiubiu</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+###### MeshPhongMaterial
+`MeshPhongMaterial`：光源敏感材质，根据光做高亮效果；<br>
+
+###### ShaderMaterial
+`ShaderMaterial`：高级自定义着色器材质；<br>
+
+###### LineBasicMaterial
+`LineBasicMaterial`：线几何体特殊材质；<br>
+
+###### LineDashedMaterial
+`LineDashedMaterial`：线几何体特殊材质，定义线段样式；
 
 ## 灯光
 `Three.js` 中存在点光源和聚光灯两种类型。
