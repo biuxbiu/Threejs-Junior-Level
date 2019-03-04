@@ -250,7 +250,26 @@ scene.add(torusKnotMesh);
 </iframe>
 
 ###### MeshDepthMaterial
-`MeshDepthMaterial`：摄像机敏感材质：作逐渐消失效果；<br>
+`MeshDepthMaterial`：使用这种材质的物体外观不是由光照或者某个材质的属性决定的，而是由物体到相机的距离决定的。和其他材质结合使用，可以实现物体逐渐消失的效果<br>
+
+语法：
+```copy
+var scene = new THREE.Scene();
+scene.overrideMaterial = new THREE.MeshDepthMaterial();   //我们可以给全局加一个物体逐渐消失的效果
+```
+
+>`overrideMaterial` 属性指的是给场景中所有物体设置材质
+
+属性：<br>
+`wireframe`：是否像是线框<br>
+`wireframeLinewidth`：线框的宽度
+
+
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="vPLMyq" src="//codepen.io/biubiubiu/embed/vPLMyq/?height=265&theme-id=0&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/biubiubiu/pen/vPLMyq/'>vPLMyq</a> by @biu²
+  (<a href='https://codepen.io/biubiubiu'>@biubiubiu</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ###### MeshNormalMaterial
 `MeshNormalMaterial`：法线敏感材质，根据法线设置颜色；<br>
