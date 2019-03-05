@@ -301,24 +301,30 @@ scene.overrideMaterial = new THREE.MeshDepthMaterial();   //我们可以给全�
 `LineDashedMaterial`：线几何体特殊材质，定义线段样式；
 
 ## 灯光
-`Three.js` 中存在点光源和聚光灯两种类型。
+`Three.js` 中存在多种灯光类型。
 
 `Three.js` 可以设置 `点光源(Point Light)`，`聚光灯(Spot Light)`，`平行光源(Direction Light)`，`环境光(Ambient Light)`。
 
 [![](../img/Light-more.svg)](https://threejs.docschina.org/#api/materials/LineBasicMaterial)
 
-`点光源( PointLight )`：向四面八方发射的单点光源<br>
+`点光源( PointLight )`：向四面八方发射的单点光源，比如说夜光中的月亮或者烟花（不会产生阴影，因为它四周方向发射，这种情况下计算阴影会对GPU造成压力）<br>
 `聚光灯( SpotLight )`：发射出锥形状的光， 模拟手电筒，台灯等光源<br>
 `平行光( DirectinalLight )`：平行的一束光，模拟从很远处照射的太阳光<br>
 `环境光( AmbientLight )`：笼罩在整个空间无处不在的光
 
-
+#### 点光源( PointLight )
 语法：
 ```copy
-Light(color: Integer,intensity: Float);
+<script>
+PointLight( color : Integer, intensity : Float, distance : Number, decay : Float )
+</script>
 ```
-`color`：颜色，默认是十六进制的写法。<br>
-`intensity`：强度，默认为 `1`。
+`color`：光源的颜色<br>
+`intensity`：光源的强度<br>
+`distance`：光源的距离<br>
+`decay`：光源的衰减指数
+
+
 
 实例：
 
@@ -327,9 +333,11 @@ Light(color: Integer,intensity: Float);
 >因为场景中的球收到灯光的影响，根据上面的材质列表，`MeshLambertMaterial` 可能会比较适合我们。
 
 ```copy
+<script>
 var light = new THREE.DictionalLight('#ffffff',1.0,0);
 light.position.set(200,200,200);
 scene.add(light);
+</script>
 ```
 
 <iframe height="265" style="width: 100%;" scrolling="no" title="Mxwwxb" src="//codepen.io/biubiubiu/embed/Mxwwxb/?height=265&theme-id=0&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
