@@ -167,7 +167,7 @@ var name2 = new  objectName(parameters1,parameters2,parametersx);
 function student(name,age,sexy){
     this.name = name,
     this.age = age,
-    this.sexy = sexy,
+    this.sexy = sexy
 }
 
 var boy = new student('peter',12,'boy');
